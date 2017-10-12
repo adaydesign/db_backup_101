@@ -4,7 +4,7 @@
  */
 define("DB_USER", 'root');
 define("DB_PASSWORD", 'root');
-define("DB_NAME", 'demo_db_101');           // test database
+define("DB_NAME", 'demo_db_101');           // your database
 define("DB_REC_NAME", 'demo_db_bak_rec');   // database of backup record
 define("DB_HOST", 'localhost');
 define("BACKUP_DIR", 'D:\backup-files');
