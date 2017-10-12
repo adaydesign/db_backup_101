@@ -24,7 +24,7 @@
         function backup(){
             $("#div_backup_progress").html("Backup database in progress ..");
 
-            var url_link = "include/db_backup.php";
+            var url_link = "lib/db_backup.php";
             var values   = {};
             $.ajax({
                 url : url_link,
@@ -59,7 +59,7 @@
 
         // restore db
         function restore(file){
-            var url_link = "include/db_restore.php";
+            var url_link = "lib/db_restore.php";
             var values   = {"bak_file":file};
             $("#div_restore_progress").html("Restore database in progress ..");
             $.ajax({
