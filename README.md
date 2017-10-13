@@ -2,7 +2,8 @@
 demo php mysql database backup script
 extended from @daniloaz https://github.com/daniloaz/myphp-backup
 
-# Require
+Required
+-------
 - PHP 5.0.5 or later
 
 Usage
