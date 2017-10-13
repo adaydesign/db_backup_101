@@ -5,8 +5,10 @@ extended from @daniloaz https://github.com/daniloaz/myphp-backup
 # Require
 - PHP 5.0.5 or later
 
-Usage : copy files in *lib* folder to your project
+Usage
 -------
+copy files in *lib* folder to your project
+
 **Configuaration**
 edit file *lib/db_config.php* 
 
