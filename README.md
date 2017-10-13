@@ -8,7 +8,7 @@ Usage
 copy files in *lib* folder to your project
 
 **Configuaration**
-edit file *lib/db_config.php* 
+: edit file *lib/db_config.php* 
 
     define("DB_HOST", 'localhost');             // host
     define("DB_USER", 'username');              // username
@@ -21,7 +21,7 @@ edit file *lib/db_config.php*
     define("GZIP_BACKUP_FILE", true);           // Set to false if you want plain SQL backup files (not gzipped)
     
 **Backup**
-example for call backup function
+: example for call backup function
     
     function backup(){
         var url_link = "lib/db_backup.php";
@@ -40,7 +40,7 @@ example for call backup function
      }
 
 **Restore**
-example for restore function, pass database backup file name to this function
+: example for restore function, pass database backup file name to this function
 
       function restore(file){
             var url_link = "lib/db_restore.php";
