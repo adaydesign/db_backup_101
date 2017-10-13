@@ -5,7 +5,7 @@ extended from @daniloaz https://github.com/daniloaz/myphp-backup
 # Require
 - PHP 5.0.5 or later
 
-Usage
+Usage : copy files in *lib* folder to your project
 -------
 **Configuaration**
 edit file *lib/db_config.php* 
@@ -42,21 +42,21 @@ example for call backup function
 **Restore**
 example for restore function, pass database backup file name to this function
 
-  function restore(file){
-        var url_link = "lib/db_restore.php";
-        var values   = {"bak_file":file};
-        $.ajax({
-            url: url_link,
-            type: "POST",
-            data: values,
-            success: function(response){
-                // to do..
-            },
-            error: function(jqXHR, textStatus, errorThrown){
-                console.log(textStatus, errorThrown);
-            }
-        });
-    }
+      function restore(file){
+            var url_link = "lib/db_restore.php";
+            var values   = {"bak_file":file};
+            $.ajax({
+                url: url_link,
+                type: "POST",
+                data: values,
+                success: function(response){
+                    // to do..
+                },
+                error: function(jqXHR, textStatus, errorThrown){
+                    console.log(textStatus, errorThrown);
+                }
+            });
+        }
     
 -----
 Project at GitHub: https://github.com/adaydesign/db_backup_101
