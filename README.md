@@ -5,6 +5,7 @@ It requires PHP 5.0.5 or later.
 
 # Version
 version 1.0 : store backup record in database.
+
 version 2.0 : store backup record in csv file.
 
 Usage
