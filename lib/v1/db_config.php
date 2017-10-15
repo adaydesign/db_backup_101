@@ -3,8 +3,8 @@
  * Define database parameters here for backup and restore setting
  */
 define("DB_HOST", 'localhost');             // host
-define("DB_USER", 'username');              // username
-define("DB_PASSWORD", 'password');          // password
+define("DB_USER", 'lbkcadmin');              // username
+define("DB_PASSWORD", 'Lbkc@db#2016');          // password
 
 define("DB_NAME", 'demo_db_101');           // database name, change to your database name that you want to backup
 define("DB_REC_NAME", 'demo_db_bak_rec');   // database of backup record

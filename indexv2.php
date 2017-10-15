@@ -4,10 +4,10 @@
     </head>
     <body style="font-family: Verdana;">
         <div>
-            <h3>PHP Mysql database backup demo (Version 1)</h3>
+            <h3>PHP Mysql database backup demo (Version 2)</h3>
             <ul>
-                <li>Version 1 : store backup record in database.</li>
-                <li>Version 2 : store backup record in csv file. [<a href="indexv2.php">demo</a>]</li>
+                <li>Version 1 : store backup record in database. [<a href="index.php">demo</a>]</li>
+                <li>Version 2 : store backup record in csv file. </li>
                 <li>project on Github : <a href="https://github.com/adaydesign/php-mysql-backup">https://github.com/adaydesign/php-mysql-backup</a></li>
             </ul>
         </div>
@@ -18,6 +18,8 @@
         <!-- Backup -->
         <div>
             <h3>Backup database</h3>
+            <p>insert comment ..</p>
+            <input type="text" id="tx_comment">
             <button onclick="backup()">backup</button>
         </div>
         <hr>
@@ -36,8 +38,8 @@
         function backup(){
             $("#div_progress").html("Backup database in progress ..");
 
-            var url_link = "lib/v1/db_backup.php";
-            var values   = {};
+            var url_link = "lib/v2/db_backup.php";
+            var values   = {"comment":$("#tx_comment").val()};
             $.ajax({
                 url : url_link,
                 type: "POST",
@@ -55,7 +57,7 @@
         // show list of backup records
         function backup_records(){
             var url_link = "render/render_bak_table.php";
-            var values   = {"version":1};
+            var values   = {"version":2};
             $.ajax({
                 url : url_link,
                 type: "POST",
@@ -71,7 +73,7 @@
 
         // restore db
         function restore(file){
-            var url_link = "lib/v1/db_restore.php";
+            var url_link = "lib/v2/db_restore.php";
             var values   = {"bak_file":file};
             $("#div_progress").html("Restore database in progress ..");
             $.ajax({
